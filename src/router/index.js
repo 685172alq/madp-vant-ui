@@ -1,30 +1,29 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-
+import Index from "../views/index.vue";
+import config from "../config";
+import store from "../store/index";
+store.state.configData = config;
 Vue.use(VueRouter);
-
-const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
+// 解决同一路由报错
+//push
+const VueRouterPush = VueRouter.prototype.push;
+VueRouter.prototype.push = function push(to) {
+    return VueRouterPush.call(this, to).catch((err) => err);
+};
+let routes = [
+    {
+        path: "/",
+        name: "Index",
+        component: Index,
+    },
 ];
-
+//路由表合并
+routes = [...routes, ...config.routersName];
 const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes,
+    // mode: "history",
+    base: process.env.BASE_URL,
+    routes,
 });
 
 export default router;
