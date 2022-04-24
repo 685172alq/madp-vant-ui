@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 <!--
  * @Author: your name
  * @Date: 2021-03-04 11:23:35
@@ -29,15 +30,17 @@
             >
         </div>
         <van-button plain hairline disabled type="info">细边框按钮</van-button>
+        <ui-button type="info" @click="handleClick">按钮</ui-button>
     </div>
 </template>
 
 <script>
-import uiButton from "@/components/ui-components/ui-button/index.vue";
-import { homeCompoents } from "@/components/json-components/mobile.js";
+// import uiButton from "../components/ui-components/ui-button/index.vue";
+import { homeCompoents } from "../components/json-components/mobile.js";
+// import UiButton from "../components/ui-components/ui-button/index.vue.js";
 export default {
-    name: "uiComponrnts",
-    components: { uiButton },
+    name: "UiComponents",
+    // components: { uiButton },
     data() {
         return {
             homeCompoents: null,

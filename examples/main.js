@@ -4,12 +4,15 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./utils/vant";
-import "@/assets/style/common.scss";
+import madpVantUi from "./components/js-components/index.js";
+import "./assets/style/common.scss";
 // import VConsole from "vconsole";
 import "./utils/madp";
 import { rpc } from "./utils/rpc.js";
 
 Vue.config.productionTip = false;
+
+Vue.use(madpVantUi);
 
 new Vue({
     router,

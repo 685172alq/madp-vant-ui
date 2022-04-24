@@ -27,7 +27,7 @@
 
 <script>
 export default {
-    name: "uiButton",
+    name: "UiButton",
     props: {
         componentData: {
             type: Object,

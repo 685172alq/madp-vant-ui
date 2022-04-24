@@ -18,7 +18,7 @@ module.exports = {
     pages: {
         index: {
             // page 的入口
-            entry: "src/main.js",
+            entry: "examples/main.js",
             // 模板来源
             template: "public/index.html",
             // 在 dist/index.html 的输出
@@ -95,7 +95,7 @@ module.exports = {
                 .loader("sass-resources-loader")
                 .options({
                     // 要公用的scss的路径
-                    resources: "./src/assets/style/common.scss",
+                    resources: "examples/assets/style/common.scss",
                 })
                 .end();
         });
