@@ -34,7 +34,7 @@
 
 <script>
 import uiButton from "@/components/ui-components/ui-button/index.vue";
-import { homeCompoents } from "@/components/js-components/mobile.js";
+import { homeCompoents } from "@/components/json-components/mobile.js";
 export default {
     name: "uiComponrnts",
     components: { uiButton },
