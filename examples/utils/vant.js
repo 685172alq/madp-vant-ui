@@ -26,8 +26,8 @@ import {
     IndexBar,
     IndexAnchor,
     SwipeCell,
-    cellGroup,
-    cell,
+    // cellGroup,
+    // cell,
     DropdownMenu,
     DropdownItem,
     Switch,
@@ -50,7 +50,7 @@ import {
     Card,
     List,
     PullRefresh,
-    CellGroup,
+    // CellGroup,
     Image,
     Grid,
     GridItem,
@@ -74,8 +74,8 @@ Vue.use(Search);
 Vue.use(IndexBar);
 Vue.use(IndexAnchor);
 Vue.use(SwipeCell);
-Vue.use(cellGroup);
-Vue.use(cell);
+// Vue.use(cellGroup);
+// Vue.use(cell);
 Vue.use(DropdownMenu);
 Vue.use(DropdownItem);
 Vue.use(Switch);
@@ -89,7 +89,7 @@ Vue.use(Checkbox);
 Vue.use(CheckboxGroup);
 Vue.use(Row);
 Vue.use(Col);
-Vue.use(Dialog);
+// Vue.use(Dialog);
 Vue.use(Step);
 Vue.use(Steps);
 Vue.use(Uploader);
@@ -102,7 +102,7 @@ Vue.use(Card);
 Vue.use(Rate);
 Vue.use(List);
 Vue.use(PullRefresh);
-Vue.use(CellGroup);
+// Vue.use(CellGroup);
 Vue.use(Image);
 Vue.use(Grid);
 Vue.use(GridItem);

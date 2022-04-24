@@ -9,11 +9,12 @@
 // const url = 'http://10.10.106.16:9488'//晓伟本地
 // const url = 'http://172.30.197.1:8239'//准生产
 const url = "http://172.30.197.21:9239"; //测试
+const path = require("path");
 const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
 const CompressionPlugin = require("compression-webpack-plugin"); //gzip 压缩
 const BundleAnalyzerPlugin =
     require("webpack-bundle-analyzer").BundleAnalyzerPlugin; //配置打包分析
-let projectName = process.env.PROJECT_NAME || "10000001";
+// let projectName = process.env.PROJECT_NAME || "10000001";
 module.exports = {
     pages: {
         index: {
@@ -30,7 +31,7 @@ module.exports = {
     },
     lintOnSave: true, //关闭 eslint 语法检测
     publicPath: "./", // hash 模式使用
-    outputDir: "dist/" + projectName + "/", //打包后的项目目录名称
+    // outputDir: "dist/" + projectName + "/", //打包后的项目目录名称
     productionSourceMap: false, //打包取消多余map文件
     //   publicPath: '/', // history模式使用
     css: {
@@ -117,7 +118,20 @@ module.exports = {
                     },
                 },
             });
-    }, //
+        //扩展配置 packages加入编译
+        config.module
+            .rule("js")
+            .include.add(
+                path.resolve(__dirname, "packages/json-components/index.js")
+            )
+            .end()
+            .use("babel")
+            .loader("babel-loader")
+            .tap((Options) => {
+                // 修改它的选项
+                return Options;
+            });
+    },
     // configureWebpack: (config) => {
     //     if (process.env.NODE_ENV === 'production') {
     //         // 为生产环境修改配置
