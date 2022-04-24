@@ -41,7 +41,7 @@ import {
     CheckboxGroup,
     Row,
     Col,
-    Dialog,
+    // Dialog,
     Step,
     Steps,
     Uploader,
