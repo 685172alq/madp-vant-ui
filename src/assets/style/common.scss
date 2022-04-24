@@ -1,39 +1,39 @@
-@import  "./reset.scss";
+// @import  "./reset.scss";
 
-/deep/ .van-nav-bar__text , /deep/ .van-nav-bar .van-icon{
-    color:#04ab62;
+// /deep/ .van-nav-bar__text , /deep/ .van-nav-bar .van-icon{
+//     color:#04ab62;
     
-}
-/deep/ .van-nav-bar .van-icon{
-    color:#04ab62;
-    font-size: 18px;
-}
-/deep/ .van-nav-bar__title {
-    font-size: 18px;
-}
+// }
+// /deep/ .van-nav-bar .van-icon{
+//     color:#04ab62;
+//     font-size: 18px;
+// }
+// /deep/ .van-nav-bar__title {
+//     font-size: 18px;
+// }
 
-/deep/.van-overlay {
-    background-color: rgba(0,0,0,.5);
-}
-/deep/ .van-icon{
-    font-size:12px;
-}
-.van-radio__icon{
+// /deep/.van-overlay {
+//     background-color: rgba(0,0,0,.5);
+// }
+// /deep/ .van-icon{
+//     font-size:12px;
+// }
+// .van-radio__icon{
 
-}
+// }
     
     
-.van-radio__icon, .van-radio__icon--round, .van-radio__icon--checked{
-    display: flex !important;
-    justify-content: space-around !important;
-    align-items: center;
-}
-/deep/ .van-radio-group {
-    font-size:$z32;
-    display: flex !important;
-    justify-content: space-around !important;
-    align-items: center;
-    height:50px;
-    line-height:50px;
-    background: $cff;
-}
+// .van-radio__icon, .van-radio__icon--round, .van-radio__icon--checked{
+//     display: flex !important;
+//     justify-content: space-around !important;
+//     align-items: center;
+// }
+// /deep/ .van-radio-group {
+//     font-size:$z32;
+//     display: flex !important;
+//     justify-content: space-around !important;
+//     align-items: center;
+//     height:50px;
+//     line-height:50px;
+//     background: $cff;
+// }

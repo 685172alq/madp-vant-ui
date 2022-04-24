@@ -1,511 +1,511 @@
-$bg3a81: #003a81; //主色
-$bg459d: #17459d; //辅色
-// 主色调及其副色调
+// $bg3a81: #003a81; //主色
+// $bg459d: #17459d; //辅色
+// // 主色调及其副色调
 
-// 主按钮字体颜色,卡片内主按钮字体颜色，禁用时按钮opacity: 0.2
-$c10: #003a81; // 主按钮默认背景颜色
-$c11: #17459d; // 主按钮按下背景颜色
+// // 主按钮字体颜色,卡片内主按钮字体颜色，禁用时按钮opacity: 0.2
+// $c10: #003a81; // 主按钮默认背景颜色
+// $c11: #17459d; // 主按钮按下背景颜色
 
-$c20: #666666; // 次按钮默认字体颜色和边框颜色
-$c21: #333333; // 次按钮按下时字体颜色和边框颜色，离开复原
+// $c20: #666666; // 次按钮默认字体颜色和边框颜色
+// $c21: #333333; // 次按钮按下时字体颜色和边框颜色，离开复原
 
-$c30: #ef7d18; // 辅助色彩1,错误、危险
-$c31: #fff7e9; // 错误、危险辅助背景色
+// $c30: #ef7d18; // 辅助色彩1,错误、危险
+// $c31: #fff7e9; // 错误、危险辅助背景色
 
-$c40: #c3a158; // 辅助色彩2
-$c41: #d8be77;
+// $c40: #c3a158; // 辅助色彩2
+// $c41: #d8be77;
 
-$c50: #3a72d9; // 辅助色彩3
-$c51: #d2e1fc;
+// $c50: #3a72d9; // 辅助色彩3
+// $c51: #d2e1fc;
 
-// 功能色彩，搭配相应背景色使用
-$err: #eb3d3d; // 错误、危险
-$errb: #ffebeb; // 错误、危险辅助背景色
-$war: #ef7d18; // 警告、提示
-$warb: #fff7e9; // 警告、提示辅助背景色
-$suc: #17459d; // 成功、完成
-$sucb: #e9fbf4; // 成功、完成辅助背景色
+// // 功能色彩，搭配相应背景色使用
+// $err: #eb3d3d; // 错误、危险
+// $errb: #ffebeb; // 错误、危险辅助背景色
+// $war: #ef7d18; // 警告、提示
+// $warb: #fff7e9; // 警告、提示辅助背景色
+// $suc: #17459d; // 成功、完成
+// $sucb: #e9fbf4; // 成功、完成辅助背景色
 
-// 其他常用色彩
-$cff: #ffffff;
-$cfe: #fefefe;
-$c80: #808080;
-$c33: #333333;
-$c66: #666666;
-$c99: #999999;
-$ccc: #cccccc;
-$ce5: #e5e5e5;
-$cef: #efefef;
+// // 其他常用色彩
+// $cff: #ffffff;
+// $cfe: #fefefe;
+// $c80: #808080;
+// $c33: #333333;
+// $c66: #666666;
+// $c99: #999999;
+// $ccc: #cccccc;
+// $ce5: #e5e5e5;
+// $cef: #efefef;
 
-//常用字体尺寸
-$z20: 20px;
-$z24: 12px;
-$z28: 14px;
-$z32: 16px;
-$z36: 18px;
-$z40: 20px;
-$z54: 27px;
-$z60: 60px;
-$z80: 80px;
-$z100: 50px;
+// //常用字体尺寸
+// $z20: 20px;
+// $z24: 12px;
+// $z28: 14px;
+// $z32: 16px;
+// $z36: 18px;
+// $z40: 20px;
+// $z54: 27px;
+// $z60: 60px;
+// $z80: 80px;
+// $z100: 50px;
 
-$s12: 12px;
+// $s12: 12px;
 
-html {
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  font-family: "黑体";
-}
-html,
-body {
-  height: 100%;
-  height: 100%;
-  background: $cef;
-  box-sizing: border-box !important;
-}
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-input:focus,
-button:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-}
-input {
-  font-family: "黑体";
-  -webkit-appearance: none;
-  resize: none;
-  border-radius: 0;
-}
-body,
-div,
-ul,
-li,
-ol,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-textarea,
-select,
-p,
-dl,
-dt,
-dd,
-a,
-img,
-button,
-form,
-table,
-th,
-tr,
-td,
-tbody,
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-  -ms-interpolation-mode: bicubic;
-}
-div {
-  box-sizing: border-box;
-}
-body,
-ul,
-li,
-ol,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-textarea,
-select,
-p,
-dl,
-dt,
-dd,
-a,
-img,
-button,
-form,
-table,
-th,
-tr,
-td,
-tbody,
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-sizing: border-box;
-}
-em,
-i {
-  font-style: normal;
-}
-strong {
-  font-weight: normal;
-}
-.clearfix:after {
-  content: "";
-  display: block;
-  visibility: hidden;
-  height: 0;
-  clear: both;
-}
-.clearfix {
-  zoom: 1;
-}
-a {
-  text-decoration: none;
-  color: #333;
-  font-family: "黑体", Microsoft YaHei, Tahoma, Arial, sans-serif;
-}
-a:hover {
-  color: #aaa795;
-  text-decoration: none;
-}
-ul,
-ol,
-li {
-  list-style: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-family: Microsoft YaHei;
-}
-img {
-  border: none;
-}
-b {
-  font-size: 100% !important;
-}
-span {
-  font-size: 100% !important;
-}
-button {
-  background: none;
-}
-//vantUI 标题颜色统一修改
-/deep/.van-nav-bar__text {
-  color: #1989fa;
-}
-/deep/.van-nav-bar__left .van-icon::before {
-  color: #1989fa;
-}
-//温馨提示
-.madp-alltips {
-  font-size: $z24;
-  padding: 0px $s12 30px;
-  span {
-    font-size: $z28 !important;
-    color: $c10 !important;
-  }
-}
-// 公共左右的两个按钮
-.madp-common-btn {
-  margin: 30px 0px;
-  display: flex;
-  justify-content: space-between;
-  button {
-    margin: 0 $s12;
-    border: 1px solid #666;
-    font-size: $z36;
-    width: 50%;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 5px;
-  }
-  // 蓝色
-  .madp-common-btn1 {
-    border: none;
-    background: $c10;
-    color: $cff;
-  }
-}
-// 公共只有一个按钮
-.madp-common-btn-one {
-  margin: 30px 0px;
-  display: flex;
-  justify-content: center;
-  button {
-    margin: 0 $s12;
-    border: 1px solid #666;
-    font-size: $z36;
-    width: 50%;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 5px;
-  }
-  // 蓝色
-  .madp-common-btn1 {
-    border: none;
-    background: $c10;
-    color: $cff;
-  }
-}
-// 银行logo图片
-.madp-logo {
-  width: 30px;
-  height: 30px;
-  margin-right: $s12;
-}
-// 左箭头
-.madp-commom-right {
-  width: 9px;
-  height: 16px;
-  margin-right: $s12;
-}
-// 列表 信息
-.madp-alllist-content {
-  .madp-alllist-conten1 {
-    background: $cff;
-    font-size: $z28;
-    padding: 0 $s12;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    line-height: 50px;
-    div:nth-child(1) {
-      color: $c80;
-    }
-  }
-}
-//灰色提示标签
-.madp-commom-sign-name {
-  height: 30px;
-  line-height: 30px;
-  padding: 0 $s12;
-  background: $ce5;
-}
-// 公共列表
-.madp-common-message-list {
-  font-size: $z32;
-  background: $cff;
-  padding: 0 $s12;
-  height: $z100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  div:nth-child(2) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    img {
-      margin-left: 12px;
-      // vertical-align: middle;
-      width: 17px;
-      height: 18px;
-    }
-    input {
-      width: 180px !important;
-      text-align: right;
-      height: $z100;
-      background: $cff;
-      // line-height :$z100;
-    }
-    input::placeholder {
-      color: $ccc;
-      /*font-family: "Helvetica Neue";*/
-    }
-  }
-  .madp-transfer-img1 {
-    // vertical-align: middle;
-    width: 9px !important;
-    height: 16px !important;
-  }
-}
-//input 默认
-input::placeholder {
-  color: $ccc;
-  /*font-family: "Helvetica Neue";*/
-}
-// //大  付款金额样式
-// .madp-common-Largeamountofmoney{
+// html {
+//   -webkit-text-size-adjust: none;
+//   -ms-text-size-adjust: none;
+//   font-family: "黑体";
+// }
+// html,
+// body {
+//   height: 100%;
+//   height: 100%;
+//   background: $cef;
+//   box-sizing: border-box !important;
+// }
+// input[type="submit"],
+// input[type="reset"],
+// input[type="button"],
+// input:focus,
+// button:focus,
+// select:focus,
+// textarea:focus {
+//   outline: none;
+// }
+// input {
+//   font-family: "黑体";
+//   -webkit-appearance: none;
+//   resize: none;
+//   border-radius: 0;
+// }
+// body,
+// div,
+// ul,
+// li,
+// ol,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// input,
+// textarea,
+// select,
+// p,
+// dl,
+// dt,
+// dd,
+// a,
+// img,
+// button,
+// form,
+// table,
+// th,
+// tr,
+// td,
+// tbody,
+// article,
+// aside,
+// details,
+// figcaption,
+// figure,
+// footer,
+// header,
+// hgroup,
+// menu,
+// nav,
+// section {
+//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// }
+// article,
+// aside,
+// details,
+// figcaption,
+// figure,
+// footer,
+// header,
+// hgroup,
+// menu,
+// nav,
+// section {
+//   display: block;
+// }
+// img {
+//   max-width: 100%;
+//   height: auto;
+//   width: auto\9;
+//   -ms-interpolation-mode: bicubic;
+// }
+// div {
+//   box-sizing: border-box;
+// }
+// body,
+// ul,
+// li,
+// ol,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// input,
+// textarea,
+// select,
+// p,
+// dl,
+// dt,
+// dd,
+// a,
+// img,
+// button,
+// form,
+// table,
+// th,
+// tr,
+// td,
+// tbody,
+// article,
+// aside,
+// details,
+// figcaption,
+// figure,
+// footer,
+// header,
+// hgroup,
+// menu,
+// nav,
+// section {
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   box-sizing: border-box;
+// }
+// em,
+// i {
+//   font-style: normal;
+// }
+// strong {
+//   font-weight: normal;
+// }
+// .clearfix:after {
+//   content: "";
+//   display: block;
+//   visibility: hidden;
+//   height: 0;
+//   clear: both;
+// }
+// .clearfix {
+//   zoom: 1;
+// }
+// a {
+//   text-decoration: none;
+//   color: #333;
+//   font-family: "黑体", Microsoft YaHei, Tahoma, Arial, sans-serif;
+// }
+// a:hover {
+//   color: #aaa795;
+//   text-decoration: none;
+// }
+// ul,
+// ol,
+// li {
+//   list-style: none;
+// }
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-size: 100%;
+//   font-family: Microsoft YaHei;
+// }
+// img {
+//   border: none;
+// }
+// b {
+//   font-size: 100% !important;
+// }
+// span {
+//   font-size: 100% !important;
+// }
+// button {
+//   background: none;
+// }
+// //vantUI 标题颜色统一修改
+// /deep/.van-nav-bar__text {
+//   color: #1989fa;
+// }
+// /deep/.van-nav-bar__left .van-icon::before {
+//   color: #1989fa;
+// }
+// //温馨提示
+// .madp-alltips {
+//   font-size: $z24;
+//   padding: 0px $s12 30px;
+//   span {
+//     font-size: $z28 !important;
+//     color: $c10 !important;
+//   }
+// }
+// // 公共左右的两个按钮
+// .madp-common-btn {
+//   margin: 30px 0px;
 //   display: flex;
 //   justify-content: space-between;
-//   align-items: center;
-//   background: $cff;
-//   height: $z100;
-//   padding: 0 $s12;
-//   line-height:$z100;
-//   font-size: 25px;
-//   margin-bottom:10px;
-//   input{
-//     width:180px !important;
-//     line-height:$z100;
-//     height: $z100;
-//     font-size: 20px;
-//     margin-left:$s12;
+//   button {
+//     margin: 0 $s12;
+//     border: 1px solid #666;
+//     font-size: $z36;
+//     width: 50%;
+//     height: 45px;
+//     line-height: 45px;
+//     border-radius: 5px;
 //   }
-//   .madp-common-Largeamountofmoney-xl{
+//   // 蓝色
+//   .madp-common-btn1 {
+//     border: none;
+//     background: $c10;
+//     color: $cff;
+//   }
+// }
+// // 公共只有一个按钮
+// .madp-common-btn-one {
+//   margin: 30px 0px;
+//   display: flex;
+//   justify-content: center;
+//   button {
+//     margin: 0 $s12;
+//     border: 1px solid #666;
+//     font-size: $z36;
+//     width: 50%;
+//     height: 45px;
+//     line-height: 45px;
+//     border-radius: 5px;
+//   }
+//   // 蓝色
+//   .madp-common-btn1 {
+//     border: none;
+//     background: $c10;
+//     color: $cff;
+//   }
+// }
+// // 银行logo图片
+// .madp-logo {
+//   width: 30px;
+//   height: 30px;
+//   margin-right: $s12;
+// }
+// // 左箭头
+// .madp-commom-right {
+//   width: 9px;
+//   height: 16px;
+//   margin-right: $s12;
+// }
+// // 列表 信息
+// .madp-alllist-content {
+//   .madp-alllist-conten1 {
+//     background: $cff;
+//     font-size: $z28;
+//     padding: 0 $s12;
 //     display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//     font-size: $z32;
-//     justify-content: space-between;
-//     img{
-//       display: flex;
 //     justify-content: space-between;
 //     align-items: center;
-//       vertical-align: middle;
-//       margin-left:$s12;
-//       width: 9px;
-//     height: 16px;
+//     height: 50px;
+//     line-height: 50px;
+//     div:nth-child(1) {
+//       color: $c80;
 //     }
 //   }
 // }
-// 付款账号样式
-.madp-common-payment {
-  text-align: right;
-  margin-top: 10px;
-  font-size: $z32;
-  background: $cff;
-  height: $z100;
-  padding: 0 $s12;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid $cef;
-  .madp-common-payment-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  img {
-    vertical-align: middle;
-    margin-left: $s12;
-    width: 9px;
-    height: 16px;
-  }
-}
-.van-radio__icon--checked .van-icon {
-  color: #fff;
-  background-color: $c10;
-  border-color: $c10;
-}
-//多人转账记录  列表 公共
-.madp-common-multiPersonTransfer-list {
-  img {
-        margin-right: $s12;
-        width: 30px;
-        height: 30px;
-  }
-  font-size: $z28;
-  margin-top: 10px;
-  background: $cff;
-  padding: 10px $s12;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  .madp-transferRecord-right {
-    margin-right: $s12;
-    width: 100%;
-    div:nth-child(1),
-    div:nth-child(2) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      div:nth-child(1) {
-        margin-bottom: 5px;
-      }
-    }
-    div:nth-child(2) {
-      div:nth-child(1) {
-        color: $c80;
-        font-size: $z24;
-      }
-    }
-  }
-}
-.common-list-flex-type {
-  margin-top: 10px;
-  .common-list-flex {
-    // div{
-    background: $cff;
-    height: 50px;
-    padding: 0 $s12;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid $cef;
-    // }
-  }
-}
-.madp-common-bottom-fixed {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-.madp-common-bottom-fixed-white {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background: #fff;
-  // border-top: 1px solid #e5e5e5;
-  box-shadow: 0 1px 5px 5px #e5e5e5;
-}
-.madp-common-skAccount {
-  .madp-common-message-list {
-    color: #000 !important;
-  }
-}
+// //灰色提示标签
+// .madp-commom-sign-name {
+//   height: 30px;
+//   line-height: 30px;
+//   padding: 0 $s12;
+//   background: $ce5;
+// }
+// // 公共列表
+// .madp-common-message-list {
+//   font-size: $z32;
+//   background: $cff;
+//   padding: 0 $s12;
+//   height: $z100;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   div:nth-child(2) {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     img {
+//       margin-left: 12px;
+//       // vertical-align: middle;
+//       width: 17px;
+//       height: 18px;
+//     }
+//     input {
+//       width: 180px !important;
+//       text-align: right;
+//       height: $z100;
+//       background: $cff;
+//       // line-height :$z100;
+//     }
+//     input::placeholder {
+//       color: $ccc;
+//       /*font-family: "Helvetica Neue";*/
+//     }
+//   }
+//   .madp-transfer-img1 {
+//     // vertical-align: middle;
+//     width: 9px !important;
+//     height: 16px !important;
+//   }
+// }
+// //input 默认
+// input::placeholder {
+//   color: $ccc;
+//   /*font-family: "Helvetica Neue";*/
+// }
+// // //大  付款金额样式
+// // .madp-common-Largeamountofmoney{
+// //   display: flex;
+// //   justify-content: space-between;
+// //   align-items: center;
+// //   background: $cff;
+// //   height: $z100;
+// //   padding: 0 $s12;
+// //   line-height:$z100;
+// //   font-size: 25px;
+// //   margin-bottom:10px;
+// //   input{
+// //     width:180px !important;
+// //     line-height:$z100;
+// //     height: $z100;
+// //     font-size: 20px;
+// //     margin-left:$s12;
+// //   }
+// //   .madp-common-Largeamountofmoney-xl{
+// //     display: flex;
+// //   justify-content: space-between;
+// //   align-items: center;
+// //     font-size: $z32;
+// //     justify-content: space-between;
+// //     img{
+// //       display: flex;
+// //     justify-content: space-between;
+// //     align-items: center;
+// //       vertical-align: middle;
+// //       margin-left:$s12;
+// //       width: 9px;
+// //     height: 16px;
+// //     }
+// //   }
+// // }
+// // 付款账号样式
+// .madp-common-payment {
+//   text-align: right;
+//   margin-top: 10px;
+//   font-size: $z32;
+//   background: $cff;
+//   height: $z100;
+//   padding: 0 $s12;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   border-bottom: 1px solid $cef;
+//   .madp-common-payment-right {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+//   img {
+//     vertical-align: middle;
+//     margin-left: $s12;
+//     width: 9px;
+//     height: 16px;
+//   }
+// }
+// .van-radio__icon--checked .van-icon {
+//   color: #fff;
+//   background-color: $c10;
+//   border-color: $c10;
+// }
+// //多人转账记录  列表 公共
+// .madp-common-multiPersonTransfer-list {
+//   img {
+//         margin-right: $s12;
+//         width: 30px;
+//         height: 30px;
+//   }
+//   font-size: $z28;
+//   margin-top: 10px;
+//   background: $cff;
+//   padding: 10px $s12;
+//   width: 100%;
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   .madp-transferRecord-right {
+//     margin-right: $s12;
+//     width: 100%;
+//     div:nth-child(1),
+//     div:nth-child(2) {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       div:nth-child(1) {
+//         margin-bottom: 5px;
+//       }
+//     }
+//     div:nth-child(2) {
+//       div:nth-child(1) {
+//         color: $c80;
+//         font-size: $z24;
+//       }
+//     }
+//   }
+// }
+// .common-list-flex-type {
+//   margin-top: 10px;
+//   .common-list-flex {
+//     // div{
+//     background: $cff;
+//     height: 50px;
+//     padding: 0 $s12;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     border-bottom: 1px solid $cef;
+//     // }
+//   }
+// }
+// .madp-common-bottom-fixed {
+//   width: 100%;
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+// }
+// .madp-common-bottom-fixed-white {
+//   width: 100%;
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+//   background: #fff;
+//   // border-top: 1px solid #e5e5e5;
+//   box-shadow: 0 1px 5px 5px #e5e5e5;
+// }
+// .madp-common-skAccount {
+//   .madp-common-message-list {
+//     color: #000 !important;
+//   }
+// }
 
-.confirm-box {
-  .van-dialog__message {
-    font-size: 14px;
-    color: $c66;
-  }
-}
+// .confirm-box {
+//   .van-dialog__message {
+//     font-size: 14px;
+//     color: $c66;
+//   }
+// }
