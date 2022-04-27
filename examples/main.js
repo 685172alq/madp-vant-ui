@@ -9,7 +9,7 @@ import "./assets/style/common.scss";
 // import VConsole from "vconsole";
 import "./utils/madp";
 import { rpc } from "./utils/rpc.js";
-
+// import madpVantUi from "madp-vant-ui"
 Vue.config.productionTip = false;
 Vue.use(madpVantUi);
 

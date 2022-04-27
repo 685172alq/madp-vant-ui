@@ -119,18 +119,18 @@ module.exports = {
                 },
             });
         //扩展配置 packages加入编译
-        config.module
-            .rule("js")
-            .include.add(
-                path.resolve(__dirname, "packages/json-components/index.js")
-            )
-            .end()
-            .use("babel")
-            .loader("babel-loader")
-            .tap((Options) => {
-                // 修改它的选项
-                return Options;
-            });
+        // config.module
+        //     .rule("js")
+        //     .include.add(
+        //         path.resolve(__dirname, "packages/json-components/index.js")
+        //     )
+        //     .end()
+        //     .use("babel")
+        //     .loader("babel-loader")
+        //     .tap((Options) => {
+        //         // 修改它的选项
+        //         return Options;
+        //     });
     },
     // configureWebpack: (config) => {
     //     if (process.env.NODE_ENV === 'production') {
