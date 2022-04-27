@@ -49,6 +49,7 @@
 import UiCol from "../components/ui-components/ui-grid/index.vue";
 import UiRow from "../components/ui-components/ui-grid/row.vue";
 export default {
+    name:"uiGrid",
     components: {
         UiRow,
         UiCol,

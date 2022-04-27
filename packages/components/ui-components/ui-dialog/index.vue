@@ -67,7 +67,7 @@
 
 <script>
 export default {
-    name: "uiDialog",
+    name: "UiDialog",
     props: {
         /*标题*/
         title: {

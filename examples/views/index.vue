@@ -145,7 +145,7 @@ import UiActionSheet from "../components/ui-components/ui-actionSheet/index";
 import UiDatetimePicker from "../components/ui-components/ui-datetimePicker/index";
 
 export default {
-    name: "uiComponrnts",
+    name: "UiComponrnts",
     components: {
         UiButton,
         UiButtonGroup,

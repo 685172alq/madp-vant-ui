@@ -38,7 +38,7 @@
 
 <script>
 export default {
-    name: "uiDatetimePicker",
+    name: "UiDatetimePicker",
     props: {
         // 是否显示动作面板
         show: Boolean,

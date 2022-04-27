@@ -1,7 +1,7 @@
 import Vue from "vue";
-import uiDialog from "./index.vue";
+import UiDialog from "./index.vue";
 
-let DialogConstructor = Vue.extend(uiDialog);
+let DialogConstructor = Vue.extend(UiDialog);
 
 const alert = function (options = {}) {
     let str_num = typeof options === "string" || typeof options === "number";
@@ -44,7 +44,10 @@ const createElement = (options) => {
     return vm.init(); // 执行初始化方法, 返回的是一个promise
 };
 
+const name = "Dialog";
+
 export const Dialog = {
+    name,
     alert,
     confirm,
 };

@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: "uiDropdownMenu",
+    name: "UiDropdownMenu",
     data() {
         return {
             value1: "",

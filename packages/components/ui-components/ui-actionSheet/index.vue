@@ -103,10 +103,10 @@
 
 <script>
 import ButtonGroup from "../ui-button/ButtonGroup";
-import uiButton from "../ui-button/index";
+import UiButton from "../ui-button/index";
 export default {
-    name: "uiActionSheet",
-    components: { ButtonGroup, uiButton },
+    name: "UiActionSheet",
+    components: { ButtonGroup, UiButton },
     props: {
         // 是否显示动作面板
         show: Boolean,

@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+    name: "UiRow",
     props: {
         gutter: {
             type: Number,
