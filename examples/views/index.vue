@@ -134,28 +134,25 @@
 </template>
 
 <script>
-import uiButton from "../components/ui-components/ui-button/index";
-import uiButtonGroup from "../components/ui-components/ui-button/ButtonGroup";
 import { homeCompoents } from "../components/json-components/mobile";
 
-import uiDialog from "../components/ui-components/ui-dialog/index.vue";
+import UiButton from "../components/ui-components/ui-button/index";
+import UiButtonGroup from "../components/ui-components/ui-button/ButtonGroup";
+import UiDialog from "../components/ui-components/ui-dialog/index.vue";
 import { Dialog } from "../components/ui-components/ui-dialog/index.js";
-
-import uiDropdownMenu from "../components/ui-components/ui-dropdownMenu/index";
-
-import uiActionSheet from "../components/ui-components/ui-actionSheet/index";
-
-import uiDatetimePicker from "../components/ui-components/ui-datetimePicker/index";
+import UiDropdownMenu from "../components/ui-components/ui-dropdownMenu/index";
+import UiActionSheet from "../components/ui-components/ui-actionSheet/index";
+import UiDatetimePicker from "../components/ui-components/ui-datetimePicker/index";
 
 export default {
     name: "uiComponrnts",
     components: {
-        uiButton,
-        uiButtonGroup,
-        uiDialog,
-        uiDropdownMenu,
-        uiActionSheet,
-        uiDatetimePicker,
+        UiButton,
+        UiButtonGroup,
+        UiDialog,
+        UiDropdownMenu,
+        UiActionSheet,
+        UiDatetimePicker,
     },
     data() {
         return {

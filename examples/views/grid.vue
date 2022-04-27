@@ -46,12 +46,12 @@
 </template>
 
 <script>
-import uiCol from "../components/ui-components/ui-grid/index.vue";
-import uiRow from "../components/ui-components/ui-grid/row.vue";
+import UiCol from "../components/ui-components/ui-grid/index.vue";
+import UiRow from "../components/ui-components/ui-grid/row.vue";
 export default {
     components: {
-        uiRow,
-        uiCol,
+        UiRow,
+        UiCol,
     },
     data() {
         return {

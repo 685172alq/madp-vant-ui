@@ -1,10 +1,38 @@
-import UiButton from "../ui-components/ui-button/index.vue";
+import UiButton from "../../components/ui-components/ui-button/index";
+import UiButtonGroup from "../../components/ui-components/ui-button/ButtonGroup";
+import UiDialog from "../../components/ui-components/ui-dialog/index.vue";
+import { Dialog } from "../../components/ui-components/ui-dialog/index.js";
+import UiDropdownMenu from "../../components/ui-components/ui-dropdownMenu/index";
+import UiActionSheet from "../../components/ui-components/ui-actionSheet/index";
+import UiDatetimePicker from "../../components/ui-components/ui-datetimePicker/index";
 
-const components = [UiButton];
+import UiCol from "../../components/ui-components/ui-grid/index.vue";
+import UiRow from "../../components/ui-components/ui-grid/row.vue";
+
+const components = [
+    UiButton,
+    UiButtonGroup,
+    UiDialog,
+    Dialog,
+    UiDropdownMenu,
+    UiActionSheet,
+    UiDatetimePicker,
+    UiCol,
+    UiRow,
+];
 
 //局部
-
-export { UiButton };
+export {
+    UiButton,
+    UiButtonGroup,
+    UiDialog,
+    Dialog,
+    UiDropdownMenu,
+    UiActionSheet,
+    UiDatetimePicker,
+    UiRow,
+    UiCol,
+};
 
 const install = function (Vue) {
     // 全局注册所有组件
