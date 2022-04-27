@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 <!--
  * @Author: your name
  * @Date: 2021-03-04 11:23:35
@@ -10,7 +9,7 @@
 <template>
     <div class="madp-components">
         <!--		<div v-for="(item, index) in homeCompoents" :key="index">-->
-        <!--			<ui-button-->
+        <!--		 	<ui-button-->
         <!--                v-if="item.componentName === 'uiButton'"-->
         <!--                :componentData="item"-->
         <!--                :disabled="item.propValues.disabled"-->
@@ -19,7 +18,6 @@
         <!--            >{{ item.name }}</ui-button>-->
         <!--		</div>-->
         <div v-for="(item, index) in homeCompoents" :key="index">
-            <div></div>
             <ui-button
                 v-if="item.componentName === 'uiButton'"
                 :type="item.propValues.type"
@@ -35,7 +33,6 @@
 </template>
 
 <script>
-// import uiButton from "../components/ui-components/ui-button/index.vue";
 import { homeCompoents } from "../components/json-components/mobile.js";
 // import UiButton from "../components/ui-components/ui-button/index.vue.js";
 export default {

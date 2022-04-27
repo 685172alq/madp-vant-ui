@@ -54,20 +54,20 @@ axios.interceptors.response.use(
         endLoading();
         const responseCode = error;
         switch (responseCode) {
-            case 401:
-                break;
+        case 401:
+            break;
             // 404请求不存在
-            case 404:
-                Toast.fail({
-                    className: "custom-toast",
-                    message: "网络请求超时"
-                });
-                break;
-            default:
-                Toast.fail({
-                    className: "custom-toast",
-                    message: error.response.data.msg
-                });
+        case 404:
+            Toast.fail({
+                className: "custom-toast",
+                message: "网络请求超时"
+            });
+            break;
+        default:
+            Toast.fail({
+                className: "custom-toast",
+                message: error.response.data.msg
+            });
         }
 
         // 断网 或者 请求超时 状态

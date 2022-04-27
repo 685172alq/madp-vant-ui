@@ -8,6 +8,7 @@
 -->
 <template>
     <div class="madp-button">
+        <div />
         <!--        <van-button-->
         <!--            :disabled="disabled"-->
         <!--            :class="`${type}_${size}_button`"-->
@@ -20,7 +21,7 @@
             :class="[classType(type), classSize(size), classDisabled(disabled)]"
             @click="handleClick"
         >
-            <slot></slot>
+            <slot />
         </van-button>
     </div>
 </template>

@@ -11,7 +11,6 @@ import "./utils/madp";
 import { rpc } from "./utils/rpc.js";
 
 Vue.config.productionTip = false;
-
 Vue.use(madpVantUi);
 
 new Vue({
