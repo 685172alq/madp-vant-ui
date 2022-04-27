@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Index from "../views/grid.vue";
+import Index from "../views/index.vue";
 import config from "../config";
 import store from "../store/index";
 store.state.configData = config;
