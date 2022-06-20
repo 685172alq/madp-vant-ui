@@ -136,8 +136,8 @@
 <script>
 import { homeCompoents } from "../components/json-components/mobile";
 
-import UiButton from "../components/ui-components/ui-button/index";
-import UiButtonGroup from "../components/ui-components/ui-button/ButtonGroup";
+// import UiButton from "../components/ui-components/ui-button/index";
+// import UiButtonGroup from "../components/ui-components/ui-button/ButtonGroup";
 import UiDialog from "../components/ui-components/ui-dialog/index.vue";
 import { Dialog } from "../components/ui-components/ui-dialog/index.js";
 import UiDropdownMenu from "../components/ui-components/ui-dropdownMenu/index";
@@ -147,8 +147,7 @@ import UiDatetimePicker from "../components/ui-components/ui-datetimePicker/inde
 export default {
     name: "UiComponrnts",
     components: {
-        UiButton,
-        UiButtonGroup,
+        // UiButtonGroup,
         UiDialog,
         UiDropdownMenu,
         UiActionSheet,

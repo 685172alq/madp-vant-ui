@@ -9,6 +9,7 @@
 <template>
     <div id="app">
         <router-view />
+        <ui-test></ui-test>
     </div>
 </template>
 <script>

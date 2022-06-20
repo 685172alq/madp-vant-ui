@@ -34,7 +34,7 @@
 
 <script>
 export default {
-    name: "UiButton",
+    name: "ui-button",
     props: {
         // 类型：default，primary，文字按钮：text
         type: {
